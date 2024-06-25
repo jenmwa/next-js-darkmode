@@ -40,13 +40,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      {/* <Head>
+    // <html lang="en" suppressHydrationWarning>
+    <html lang="en">
+      <Head>
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
-      </Head> */}
+      </Head>
       <body className={inter.className}>
+        {children}
         {/* <Providers>{children}</Providers> */}
-        <Provider>{children}</Provider>
+        {/* <Provider>{children}</Provider> */}
       </body>
     </html>
   );

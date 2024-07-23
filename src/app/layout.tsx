@@ -4,6 +4,8 @@ import "./globals.css";
 import Head from "next/head";
 // import Providers from "./Providers";
 import { Provider } from "./utils/Provider";
+import { Sidebar } from "./_components/Sidebar";
+import SidebarProvider from "./_components/SidebarContext";
 //src/app/utils/Providers.tsx
 
 const inter = Inter({ subsets: ["latin"] });
@@ -45,10 +47,13 @@ export default function RootLayout({
       <Head>
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
       </Head>
-      <body className={inter.className}>
-        {children}
-        {/* <Providers>{children}</Providers> */}
-        {/* <Provider>{children}</Provider> */}
+      <body className={`${inter.className} layout`}>
+        <SidebarProvider>
+          <Sidebar></Sidebar>
+          {children}
+          {/* <Providers>{children}</Providers> */}
+          {/* <Provider>{children}</Provider> */}
+        </SidebarProvider>
       </body>
     </html>
   );

@@ -60,5 +60,15 @@ h1 {
   flex-grow: 1;
 }
 
+.tooltip.arrow-left::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -0.5rem; 
+  margin-top: -0.25rem; 
+  border-width: 0.25rem;
+  border-style: solid;
+  border-color: transparent #D4D4D8 transparent transparent; 
+}
 
 

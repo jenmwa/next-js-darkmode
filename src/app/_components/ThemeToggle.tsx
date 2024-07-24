@@ -36,7 +36,6 @@ const ThemeToggle = () => {
       type="button"
       onClick={toggleTheme}
       className={`relative flex items-center justify-around w-20 h-10 p-1 border-0 rounded-full cursor-pointer transition-all duration-250 ease-in-out ${
-        // activeTheme === "light" ? "bg-gray-700" : "bg-gray-900"
         activeTheme === "light" ? "bg-gray-700" : "bg-gray-500"
       } focus:outline focus-visible:outline-offset-2 hover:shadow-lg`}
     >

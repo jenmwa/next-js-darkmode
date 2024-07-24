@@ -47,11 +47,6 @@ h1 {
   color: var(--color-text-secondary);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
 /**/
 
 .layout {
@@ -65,13 +60,5 @@ h1 {
   flex-grow: 1;
 }
 
-[data-collapse="true"] {
-  width: 5.3rem;
-}
-
-[data-collapse="true"] .sidebar__name,
-[data-collapse="true"] .sidebar__logo-name {
-  display: none;
-}
 
 

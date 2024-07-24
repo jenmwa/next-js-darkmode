@@ -1,4 +1,3 @@
-// components/ThemeToggle.tsx
 "use client";
 import { useState, useEffect } from "react";
 
@@ -25,7 +24,7 @@ const ThemeToggle = () => {
   };
 
   if (!isMounted) {
-    return null; // Ensure component is not rendered until it's fully mounted on the client side
+    return null;
   }
 
   return (

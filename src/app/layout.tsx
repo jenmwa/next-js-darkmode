@@ -6,6 +6,7 @@ import Head from "next/head";
 import { Provider } from "./utils/Provider";
 import { Sidebar } from "./_components/Sidebar";
 import SidebarProvider from "./_components/SidebarContext";
+import { Header } from "./_components/Header";
 //src/app/utils/Providers.tsx
 
 const inter = Inter({ subsets: ["latin"] });
@@ -50,6 +51,7 @@ export default function RootLayout({
       <body className={`${inter.className} layout`}>
         <SidebarProvider>
           <Sidebar></Sidebar>
+          <Header></Header>
           {children}
           {/* <Providers>{children}</Providers> */}
           {/* <Provider>{children}</Provider> */}

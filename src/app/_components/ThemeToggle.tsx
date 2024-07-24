@@ -37,11 +37,12 @@ const ThemeToggle = () => {
       type="button"
       onClick={toggleTheme}
       className={`relative flex items-center justify-around w-20 h-10 p-1 border-0 rounded-full cursor-pointer transition-all duration-250 ease-in-out ${
-        activeTheme === "light" ? "bg-gray-300" : "bg-gray-700"
+        // activeTheme === "light" ? "bg-gray-700" : "bg-gray-900"
+        activeTheme === "light" ? "bg-gray-700" : "bg-gray-500"
       } focus:outline-none focus-visible:outline-offset-2 hover:shadow-lg`}
     >
       <span
-        className={`absolute top-1 left-2 w-8 h-8 rounded-full bg-white transition-transform duration-250 ease-in-out ${
+        className={`absolute top-1  left-2 w-8 h-8 rounded-full bg-white transition-transform duration-250 ease-in-out ${
           activeTheme === "dark" ? "transform translate-x-full" : ""
         }`}
       />

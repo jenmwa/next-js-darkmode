@@ -45,9 +45,9 @@ export default function RootLayout({
   return (
     // <html lang="en" suppressHydrationWarning>
     <html lang="en">
-      <Head>
+      {/* <Head>
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
-      </Head>
+      </Head> */}
       <body className={`${inter.className} layout`}>
         <SidebarProvider>
           <Sidebar></Sidebar>
